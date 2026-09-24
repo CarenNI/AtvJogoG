@@ -1,0 +1,114 @@
+[gd_scene format=4 uid="uid://c6aesq1muyjol"]
+
+[ext_resource type="Texture2D" uid="uid://4o82hbg03tjt" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/5 - Sky_color.png" id="1_4xymg"]
+[ext_resource type="Texture2D" uid="uid://dotjdlm5dc7u5" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/4 - Background_clouds.png" id="2_fgckq"]
+[ext_resource type="Texture2D" uid="uid://4gvaq16xsruq" path="res://sprites/Seasonal Tilesets/3 - Tropics/Background parts/3 - Floating_clouds.png" id="3_7ubti"]
+[ext_resource type="PackedScene" uid="uid://wc3hns6scnuu" path="res://entities/Player.tscn" id="4_y5s20"]
+[ext_resource type="PackedScene" uid="uid://3jwixiobsk70" path="res://entities/camera.tscn" id="5_pg3vg"]
+[ext_resource type="Texture2D" uid="uid://c583mligs50ws" path="res://sprites/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png" id="6_aq07l"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aqf5g"]
+texture = ExtResource("6_aq07l")
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+11:1/0 = 0
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+11:2/0 = 0
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+15:3/0 = 0
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:4/0 = 0
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:5/0 = 0
+11:5/0 = 0
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:6/0 = 0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:6/0 = 0
+4:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_wo4a7"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_aqf5g")
+
+[node name="Sala" type="Node2D" unique_id=953665535]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=939990179]
+
+[node name="4" type="ParallaxLayer" parent="ParallaxBackground" unique_id=722795553]
+motion_mirroring = Vector2(208, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/4" unique_id=1375764134]
+position = Vector2(-3, 4)
+texture = ExtResource("1_4xymg")
+centered = false
+
+[node name="5" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1623267520]
+motion_mirroring = Vector2(208, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/5" unique_id=2095747332]
+position = Vector2(-3, 4)
+texture = ExtResource("2_fgckq")
+centered = false
+
+[node name="6" type="ParallaxLayer" parent="ParallaxBackground" unique_id=649810544]
+motion_mirroring = Vector2(208, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/6" unique_id=964016662]
+position = Vector2(-3, 4)
+texture = ExtResource("3_7ubti")
+centered = false
+
+[node name="Player" parent="." unique_id=2021741904 instance=ExtResource("4_y5s20")]
+
+[node name="Camera" parent="." unique_id=1763247271 instance=ExtResource("5_pg3vg")]
+limit_right = 550
+
+[node name="Label" type="Label" parent="Camera" unique_id=1577502428]
+offset_left = 254.0
+offset_top = 116.0
+offset_right = 373.0
+offset_bottom = 139.0
+text = "sala do tesouro"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=380040619]
+tile_map_data = PackedByteArray("AAAAAAsAAAABAAMAAAAAAAwAAAABAAQAAAABAAsAAAACAAMAAAABAAwAAAACAAQAAAACAAsAAAACAAMAAAACAAwAAAACAAQAAAADAAsAAAACAAMAAAADAAwAAAACAAQAAAAEAAsAAAACAAMAAAAEAAwAAAACAAQAAAAFAAsAAAACAAMAAAAFAAwAAAACAAQAAAAGAAsAAAACAAMAAAAGAAwAAAACAAQAAAAHAAsAAAACAAMAAAAHAAwAAAACAAQAAAAIAAsAAAACAAMAAAAIAAwAAAACAAQAAAAJAAsAAAACAAMAAAAJAAwAAAACAAQAAAAKAAsAAAACAAMAAAAKAAwAAAACAAQAAAALAAsAAAACAAMAAAALAAwAAAACAAQAAAAMAAsAAAACAAMAAAAMAAwAAAACAAQAAAAOAAsAAAACAAMAAAAOAAwAAAACAAQAAAANAAsAAAACAAMAAAANAAwAAAACAAQAAAAPAAsAAAACAAMAAAAPAAwAAAACAAQAAAAQAAsAAAACAAMAAAAQAAwAAAACAAQAAAARAAsAAAACAAMAAAARAAwAAAACAAQAAAASAAsAAAACAAMAAAASAAwAAAACAAQAAAATAAsAAAACAAMAAAATAAwAAAACAAQAAAAVAAsAAAACAAMAAAAVAAwAAAACAAQAAAAUAAsAAAACAAMAAAAUAAwAAAACAAQAAAAWAAsAAAACAAMAAAAWAAwAAAACAAQAAAAXAAsAAAACAAMAAAAXAAwAAAACAAQAAAAYAAsAAAACAAMAAAAYAAwAAAACAAQAAAAZAAsAAAACAAMAAAAZAAwAAAACAAQAAAAaAAsAAAACAAMAAAAaAAwAAAACAAQAAAAbAAsAAAACAAMAAAAbAAwAAAACAAQAAAAcAAsAAAACAAMAAAAcAAwAAAACAAQAAAAdAAsAAAACAAMAAAAdAAwAAAACAAQAAAAeAAsAAAACAAMAAAAeAAwAAAACAAQAAAAeAAoAAAADAAQAAAAeAAkAAAADAAQAAAAeAAgAAAADAAQAAAAeAAcAAAADAAQAAAAeAAYAAAADAAQAAAAeAAUAAAADAAQAAAAeAAQAAAADAAQAAAAdAAoAAAADAAQAAAAdAAkAAAADAAQAAAAdAAgAAAADAAQAAAAdAAcAAAADAAQAAAAdAAYAAAADAAQAAAAdAAUAAAADAAQAAAAdAAQAAAADAAQAAAAcAAMAAAAFAAIAAAAbAAMAAAADAAQAAAAaAAMAAAADAAIAAAAZAAQAAAADAAQAAAAYAAQAAAADAAQAAAAaAAQAAAADAAQAAAAcAAQAAAADAAQAAAAbAAQAAAADAAQAAAAXAAMAAAAFAAIAAAAVAAMAAAADAAIAAAAWAAMAAAADAAQAAAAXAAQAAAADAAQAAAAWAAQAAAADAAQAAAAVAAQAAAADAAQAAAATAAQAAAADAAQAAAAUAAQAAAADAAQAAAASAAQAAAADAAQAAAARAAMAAAAFAAIAAAAQAAMAAAADAAQAAAAPAAMAAAADAAIAAAAPAAQAAAADAAQAAAAQAAQAAAADAAQAAAARAAQAAAADAAQAAAAOAAQAAAADAAQAAAANAAQAAAADAAQAAAAMAAQAAAADAAQAAAALAAMAAAAFAAIAAAAKAAMAAAADAAQAAAAJAAMAAAADAAIAAAAJAAQAAAADAAQAAAAKAAQAAAADAAQAAAALAAQAAAADAAQAAAAIAAQAAAACAAMAAAAGAAQAAAABAAMAAAAGAAUAAAADAAQAAAAGAAYAAAADAAQAAAAGAAcAAAADAAQAAAAGAAgAAAACAAQAAAAHAAUAAAADAAQAAAAIAAUAAAADAAQAAAAJAAUAAAADAAQAAAAKAAUAAAADAAQAAAALAAUAAAADAAQAAAAMAAUAAAADAAQAAAANAAUAAAADAAQAAAAOAAUAAAADAAQAAAAPAAUAAAADAAQAAAAQAAUAAAADAAQAAAARAAUAAAADAAQAAAASAAUAAAADAAQAAAATAAUAAAADAAQAAAAUAAUAAAADAAQAAAAVAAUAAAADAAQAAAAWAAUAAAADAAQAAAAXAAUAAAADAAQAAAAYAAUAAAADAAQAAAAZAAUAAAADAAQAAAAaAAUAAAADAAQAAAAbAAUAAAADAAQAAAAcAAUAAAADAAQAAAAcAAYAAAACAAQAAAAbAAYAAAACAAQAAAAaAAYAAAACAAQAAAAZAAYAAAACAAQAAAAYAAYAAAACAAQAAAAXAAYAAAACAAQAAAAWAAYAAAACAAQAAAAVAAYAAAACAAQAAAAUAAYAAAACAAQAAAATAAYAAAACAAQAAAASAAYAAAACAAQAAAARAAYAAAACAAQAAAAQAAYAAAACAAQAAAAPAAYAAAACAAQAAAAOAAYAAAACAAQAAAANAAYAAAACAAQAAAAMAAYAAAACAAQAAAALAAYAAAACAAQAAAAKAAYAAAACAAQAAAAJAAYAAAACAAQAAAAIAAYAAAADAAQAAAAHAAYAAAADAAQAAAAHAAcAAAADAAQAAAAHAAgAAAACAAQAAAAIAAcAAAADAAQAAAAIAAgAAAACAAQAAAAFAAgAAAACAAQAAAAEAAgAAAACAAQAAAADAAgAAAABAAQAAAADAAcAAAADAAIAAAAEAAcAAAADAAQAAAAFAAcAAAADAAQAAAADAAYAAAADAAIAAAAEAAYAAAADAAQAAAAFAAYAAAADAAQAAAADAAUAAAABAAMAAAAJAAIAAAABAAMAAAAPAAIAAAABAAMAAAAVAAIAAAABAAMAAAAaAAIAAAABAAMAAAAcAAIAAAAHAAMAAAARAAIAAAAHAAMAAAAXAAIAAAAHAAMAAAALAAIAAAAHAAMAAAAHAAQAAAACAAMAAAAEAAUAAAACAAMAAAAFAAUAAAACAAMAAAAKAAIAAAACAAMAAAAQAAIAAAACAAMAAAAWAAIAAAACAAMAAAAbAAIAAAACAAMAAAAfAAsAAAACAAMAAAAfAAwAAAACAAQAAAAgAAsAAAACAAMAAAAgAAwAAAACAAQAAAAhAAsAAAACAAMAAAAhAAwAAAACAAQAAAAiAAsAAAACAAMAAAAiAAwAAAACAAQAAAA=")
+tile_set = SubResource("TileSet_wo4a7")
